@@ -1,0 +1,52 @@
+# requirements.txt
+
+# Core dependencies (essential for all components)
+# -----------------------------------------------------------------------------
+python-dotenv==1.0.0        # Environment variable management
+python-dateutil==2.8.2      # Date parsing utilities
+loguru==0.7.0               # Modern logging framework
+typer==0.9.0                # CLI framework for task management
+
+# Data processing & utilities
+# -----------------------------------------------------------------------------
+pandas==2.0.3               # Data manipulation
+numpy==1.24.3               # Numerical operations
+pyarrow==12.0.1             # Efficient data transfer
+
+# Telegram scraping (Task 1)
+# -----------------------------------------------------------------------------
+telethon==1.28.5            # Telegram API client
+aiohttp==3.8.4              # Async HTTP requests
+aiofiles==23.1.0            # Async file operations
+
+# Database & transformation (Task 2)
+# -----------------------------------------------------------------------------
+dbt-core==1.5.0             # Core dbt functionality
+dbt-postgres==1.5.0         # PostgreSQL adapter for dbt
+psycopg2-binary==2.9.6      # PostgreSQL database adapter
+sqlalchemy==2.0.15          # ORM and SQL toolkit
+
+# Image processing & enrichment (Task 3)
+# -----------------------------------------------------------------------------
+ultralytics==8.0.0          # YOLOv8 object detection
+opencv-python-headless==4.7.0.72  # Image processing (headless version)
+Pillow==9.5.0               # Image handling
+
+# API development (Task 4)
+# -----------------------------------------------------------------------------
+fastapi==0.95.0             # API framework
+uvicorn[standard]==0.21.1   # ASGI server
+pydantic==1.10.7            # Data validation
+python-multipart==0.0.6     # Form data handling
+
+# Orchestration (Task 5)
+# -----------------------------------------------------------------------------
+dagster==1.3.0              # Pipeline orchestration
+dagster-postgres==0.20.0    # PostgreSQL support for Dagster
+dagster-webserver==1.3.0    # Web UI for Dagster
+
+# Testing & development
+# -----------------------------------------------------------------------------
+pytest==7.3.1               # Testing framework
+responses==0.23.1           # Mock HTTP requests
+pre-commit==3.3.2           # Pre-commit hooks
